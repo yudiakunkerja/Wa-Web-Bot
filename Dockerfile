@@ -32,7 +32,9 @@ WORKDIR /app
 
 # Copy package files dulu (supaya layer cache efisien)
 COPY package*.json ./
-RUN npm ci --only=production
+
+# 🔧 FIX: Ganti npm ci jadi npm install
+RUN npm install --omit=dev
 
 # Copy source code
 COPY . .
