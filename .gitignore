@@ -1,7 +1,24 @@
+# Dependencies
 node_modules/
+
+# 🔒 SECRETS & ENVIRONMENT
 .env
+.env.local
+.env.*.local
+
+# WhatsApp session (JANGAN commit)
 .wwebjs_auth/
 .wwebjs_cache/
+
+# Logs
 logs/
+*.log
 npm-debug.log*
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
